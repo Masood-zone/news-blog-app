@@ -1,12 +1,11 @@
 import React from "react";
-import { mainLogo } from "../../assets";
 import { NAVBAR_DATA } from "../navbar/data";
 import { Link } from "react-router-dom";
 import { Phone, SendHorizontal } from "lucide-react";
 
 function Footer() {
   return (
-    <>
+    <footer className="mt-10 bottom-0 left-0 z-40">
       <footer className="footer p-10 max-sm:p-4 bg-base-200 text-base-content">
         <nav>
           <h6 className="footer-title">Topics</h6>
@@ -82,7 +81,7 @@ function Footer() {
           </div>
         </nav>
       </footer>
-    </>
+    </footer>
   );
 }
 

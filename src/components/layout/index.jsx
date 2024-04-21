@@ -8,7 +8,7 @@ function Layout() {
   return (
     <div className="max-w-full h-auto mx-auto max-xl:w-full max-md:w-full">
       <Navbar />
-      <div className="max-w-6xl h-screen mt-[105px] mx-auto px-2 py-2 max-md:p-1">
+      <div className="h-auto mt-[100px] mx-auto px-2 py-2 max-md:p-1">
         <Outlet />
       </div>
       {/* Footer */}
