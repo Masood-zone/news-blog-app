@@ -14,9 +14,9 @@ function Home() {
         <LatestNews />
       </div>
       {/* Popular News*/}
-      <div className="flex flex-col items-start max-md:items-center gap-5 mt-14">
-        <div>
-          <h1 className="text-3xl font-bold py-3">Popular News</h1>
+      <div className="flex flex-col items-center max-md:items-center gap-5 mt-14">
+        <div className="py-10">
+          <h1 className="text-3xl font-bold">Popular News</h1>
         </div>
         <article className="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 grid-rows-2  gap-10 max-md:mx-auto">
           {isLoading ? (

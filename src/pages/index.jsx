@@ -56,23 +56,9 @@ const rootRoutes = createBrowserRouter(
           path="environment"
           lazy={async () => {
             const { default: Environment } = await import(
-              "./entertainment/index"
+              "./environment/index"
             );
             return { Component: Environment };
-          }}
-        />
-        <Route
-          path="culture"
-          lazy={async () => {
-            const { default: Culture } = await import("./culture/index");
-            return { Component: Culture };
-          }}
-        />
-        <Route
-          path="social"
-          lazy={async () => {
-            const { default: Social } = await import("./social/index");
-            return { Component: Social };
           }}
         />
         <Route

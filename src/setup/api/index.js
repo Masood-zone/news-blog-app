@@ -28,5 +28,14 @@ export const newsApi = createApi({
     getHealthNews: builder.query({
       query: () => `/top-headlines?country=us&category=health&pageSize=10`,
     }),
+    getTechnologyNews: builder.query({
+      query: () => `/top-headlines?country=us&category=technology&pageSize=10`,
+    }),
+    getSportsNews: builder.query({
+      query: () => `/top-headlines?country=us&category=sports&pageSize=10`,
+    }),
+    getScienceNews: builder.query({
+      query: () => `/top-headlines?country=us&category=science&pageSize=10`,
+    }),
   }),
 });

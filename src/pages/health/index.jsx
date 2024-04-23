@@ -1,7 +1,9 @@
-import React from "react";
+import Headlines from "../../components/news/headlines";
+import { newsApi } from "../../setup/api";
 
 function Health() {
-  return <div>Health</div>;
+  const { data, isLoading } = newsApi.useGetHealthNewsQuery();
+  return <Headlines data={data} isLoading={isLoading} title="Health News" />;
 }
 
 export default Health;

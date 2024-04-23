@@ -1,7 +1,9 @@
-import React from "react";
+import Headlines from "../../components/news/headlines";
+import { newsApi } from "../../setup/api";
 
 function Sports() {
-  return <div>Sports</div>;
+  const { data, isLoading } = newsApi.useGetSportsNewsQuery();
+  return <Headlines title="Sports News" data={data} isLoading={isLoading} />;
 }
 
 export default Sports;

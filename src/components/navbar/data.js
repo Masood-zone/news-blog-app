@@ -39,18 +39,8 @@ export const NAVBAR_DATA = [
 export const subLinks = [
   {
     id: 1,
-    title: "Environment",
+    title: "Science",
     path: "/environment",
-  },
-  {
-    id: 2,
-    title: "Culture",
-    path: "/culture",
-  },
-  {
-    id: 3,
-    title: "Social",
-    path: "/social",
   },
   {
     id: 4,
