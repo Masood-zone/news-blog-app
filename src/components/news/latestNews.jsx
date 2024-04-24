@@ -25,12 +25,6 @@ function LatestNews() {
     ];
   const otherNews = generalNews?.articles.slice(1, 4);
 
-  console.log("main news", mainNews);
-  console.log("politics", politics);
-  //console.log("business", business);
-  //console.log("entertainment", entertainment);
-  //console.log("other news", otherNews);
-
   return (
     <section className="grid grid-cols-3 grid-rows-2 max-md:grid-cols-2 max-sm:grid-cols-1 gap-5 overflow-hidden h-screen max-md:h-[990px]">
       {/* Latest General News*/}

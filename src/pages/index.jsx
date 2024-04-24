@@ -46,6 +46,13 @@ const rootRoutes = createBrowserRouter(
           }}
         />
         <Route
+          path="search-news"
+          lazy={async () => {
+            const { default: NewsSearch } = await import("./search");
+            return { Component: NewsSearch };
+          }}
+        />
+        <Route
           path="business"
           lazy={async () => {
             const { default: Business } = await import("./business");

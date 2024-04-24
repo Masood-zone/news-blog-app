@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { mainLogo } from "../../assets";
 import { NAVBAR_DATA, subLinks } from "./data";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import classNames from "classnames";
-import { AlignCenter } from "lucide-react";
+import { AlignCenter, SearchCheck } from "lucide-react";
 
 function Navbar() {
   const location = useLocation();
+  const navigate = useNavigate();
   const currentPath = location.pathname;
   const [navbarColor, setNavbarColor] = useState("bg-white");
 
@@ -74,13 +75,15 @@ function Navbar() {
         </ul>
       </div>
       {/* Navbar End */}
-      <div className="navbar-end">
-        <div className="form-control">
-          <input
-            type="text"
-            placeholder="Search"
-            className="input input-bordered w-48 max-sm:w-40 md:w-auto max-[399px]:w-32"
-          />
+      <div className="navbar-end justify-center">
+        <div className="flex flex-row-reverse items-center gap-3">
+          <button
+            className="btn btn-circle"
+            onClick={() => navigate("/search-news")}
+          >
+            <SearchCheck />
+          </button>
+          <span className="cursor-pointer">Search News</span>
         </div>
         {/* Mobile Navbar */}
         <div className="">
@@ -132,10 +135,8 @@ function MobileNavbar() {
           </details>
         </li>
         <li>
-          <a className="justify-between">
-            {/*Profile info */}
-            Profile
-            <span className="badge">New</span>
+          <a className="justify-between" href="/search-news">
+            Search News
           </a>
         </li>
       </ul>
