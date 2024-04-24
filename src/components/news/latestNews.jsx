@@ -28,12 +28,12 @@ function LatestNews() {
   return (
     <section className="grid grid-cols-3 grid-rows-2 max-md:grid-cols-2 max-sm:grid-cols-1 gap-5 overflow-hidden h-screen max-md:h-[990px]">
       {/* Latest General News*/}
-      <div className="rounded-box w-auto col-span-2 h-full my-2 mx-2 card lg:card-side border-2 ">
+      <div className="rounded-box w-auto col-span-2 h-full my-2 mx-2 card max-sm:card-compact border-2">
         <figure className="">
           <img
             src={mainNews?.urlToImage}
             alt={mainNews?.title}
-            className="w-full h-full"
+            className="w-full h-full sm:hidden"
           />
         </figure>
         <div className="card-body">
