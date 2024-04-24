@@ -79,7 +79,7 @@ function AboutUs() {
     },
     {
       id: 10,
-      name: "Deri Tietaa Ebenzer",
+      name: "Deri Tietaa Ebenezer",
       role: "Leader",
       indexNumber: "5221040100",
       image_src: member10,
