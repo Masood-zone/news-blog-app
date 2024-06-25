@@ -23,7 +23,7 @@ function Home() {
             <div className="w-[900px] h-32 flex items-center justify-center col-span-full  mx-auto max-md:w-auto max-sm:w-auto max-[499px]:w-auto max-[399px]:w-auto">
               <div className="loader"></div>
             </div>
-          ) : generalNews.length > 0 ? (
+          ) : generalNews?.length > 0 ? (
             generalNews?.map((news) => (
               <div
                 key={news.url}
